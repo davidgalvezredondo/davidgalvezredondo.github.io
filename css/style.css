@@ -370,63 +370,29 @@ body {
 }
 
 @media (max-width: 900px) {
-  .skills-container {
-    margin-top: 5%;
-    width: 95%;
-    padding: 2rem;
-  }
+    .nav-list {
+        gap: 1rem;
+        flex-wrap: wrap; /* Allow items to wrap to a new line */
+        justify-content: center; /* Center the items */
+    }
 
-  .header {
-    padding: 1rem 1.25rem;
-  }
+    .header {
+        padding: 1rem 1.25rem;
+    }
 
-  .nav-list {
-    gap: 1.2rem;
-  }
-
-  .hero-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-text {
-    margin-right: 0;
-    margin-bottom: 2.5rem;
-  }
-
-  .logo {
-    font-size: clamp(1rem, 3.2vw, 1.3rem);
-  }
-
-  .btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
+    .nav-list a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
 }
 
 @media (max-width: 600px) {
-  .header {
-    border-radius: 0;
-    box-shadow: none;
-  }
+    .nav-list {
+        gap: 0.5rem; /* Further reduce gap for very small screens */
+    }
 
-  .hero {
-    padding-top: 8rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .nav-list {
-    gap: 0.9rem;
-  }
-
-  .hero-image {
-    width: clamp(12rem, 55vw, 16rem);
-    height: clamp(12rem, 55vw, 16rem);
-  }
-
-  .social-links {
-    gap: 0.6rem;
-  }
+    .nav-list a {
+        padding: 8px 12px; /* Adjust padding to fit smaller screen */
+        font-size: 0.85rem; /* Adjust font size */
+    }
 }
