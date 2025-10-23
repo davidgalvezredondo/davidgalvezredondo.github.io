@@ -370,45 +370,45 @@ body {
 }
 
 body, html {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 @media (max-width: 900px) {
     .header {
-        padding: 1rem; /* Adjust header padding */
+        padding: 1rem;
     }
 
     .container {
-        padding: 0 1rem; /* Adjust container padding */
+        padding: 0 1rem;
     }
 
     .nav-list {
         gap: 1rem;
-        flex-wrap: wrap; /* Allow wrapping for smaller screens */
-        justify-content: center; /* Center the navigation items */
-        width: 100%; /* Make nav bar take full width */
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
         margin-top: 0.5rem;
     }
 
     .nav-list a {
         padding: 8px 15px;
-        font-size: 0.9rem; /* Adjust font size */
+        font-size: 0.9rem;
     }
 
     .logo {
-        font-size: clamp(1.5rem, 5vw, 2rem); /* Adjust logo size for mobile */
+        font-size: clamp(1.5rem, 5vw, 2rem);
     }
 }
 
 @media (max-width: 600px) {
     .nav-list {
-        gap: 0.5rem; /* Adjust gap for smaller screens */
+        gap: 0.5rem;
         justify-content: space-between;
     }
 
     .nav-list a {
-        padding: 8px 12px; /* Adjust padding */
-        font-size: 0.85rem; /* Adjust font size for very small screens */
+        padding: 8px 12px;
+        font-size: 0.85rem;
     }
 
     .header {
