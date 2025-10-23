@@ -407,37 +407,26 @@ body {
 
 @media (max-width: 600px) {
   .header {
-    padding: 0.25rem 0.5rem; /* Much smaller padding */
     border-radius: 0;
     box-shadow: none;
   }
 
-  .nav-list {
-    gap: 0.5rem; /* Smaller gap between items */
-  }
-
-  .logo {
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* Smaller logo size */
-  }
-
-  .nav-list a {
-    font-size: 0.85rem; /* Smaller font size for nav items */
-    padding: 6px 12px; /* Reduced padding for nav items */
-  }
-
   .hero {
     padding-top: 8rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .nav-list {
+    gap: 0.9rem;
   }
 
   .hero-image {
-    width: clamp(10rem, 40vw, 14rem); /* Slightly smaller image */
-    height: clamp(10rem, 40vw, 14rem); /* Slightly smaller image */
+    width: clamp(12rem, 55vw, 16rem);
+    height: clamp(12rem, 55vw, 16rem);
   }
 
   .social-links {
-    gap: 0.5rem; /* Smaller gap between social icons */
+    gap: 0.6rem;
   }
 }
-
