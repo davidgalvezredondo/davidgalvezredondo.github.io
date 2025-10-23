@@ -407,37 +407,53 @@ body {
 
 @media (max-width: 600px) {
   .header {
-    padding: 0.25rem 0.5rem; /* Much smaller padding */
+    padding: 0.2rem 0.5rem; /* Even smaller padding */
     border-radius: 0;
     box-shadow: none;
+    top: 0; /* Ensure it's at the top */
   }
 
-  .nav-list {
-    gap: 0.5rem; /* Smaller gap between items */
+  .container {
+    padding: 0; /* Remove extra padding */
+    flex-direction: row; /* Keep items in a row */
+    align-items: center; /* Center items vertically */
   }
 
   .logo {
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* Smaller logo size */
+    font-size: clamp(0.9rem, 3vw, 1rem); /* Smaller logo */
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: flex-start;
+    gap: 0.5rem; /* Smaller gap between items */
+    width: 100%; /* Make sure the nav bar spans the full width */
+    overflow: hidden; /* Prevent items from overflowing */
   }
 
   .nav-list a {
-    font-size: 0.85rem; /* Smaller font size for nav items */
-    padding: 6px 12px; /* Reduced padding for nav items */
+    font-size: 0.85rem; /* Smaller font size */
+    padding: 5px 10px; /* Reduced padding */
+    white-space: nowrap; /* Prevent line breaks within nav items */
+    text-overflow: ellipsis; /* Add ellipsis if the text overflows */
+    display: inline-block;
+    max-width: 100%; /* Ensure it doesn't stretch beyond the container */
   }
 
   .hero {
-    padding-top: 8rem;
+    padding-top: 7rem; /* Adjust padding to give more space */
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
   .hero-image {
-    width: clamp(10rem, 40vw, 14rem); /* Slightly smaller image */
-    height: clamp(10rem, 40vw, 14rem); /* Slightly smaller image */
+    width: clamp(10rem, 40vw, 14rem); /* Reduce size */
+    height: clamp(10rem, 40vw, 14rem);
   }
 
   .social-links {
-    gap: 0.5rem; /* Smaller gap between social icons */
+    gap: 0.5rem;
   }
 }
 
