@@ -407,19 +407,23 @@ body {
 
 @media (max-width: 600px) {
   .header {
+    padding: 0.5rem 1rem; /* Reduced padding for a smaller header */
     border-radius: 0;
     box-shadow: none;
-    
+  }
+
+  .nav-list {
+    gap: 0.7rem; /* Reduce the space between nav items */
+  }
+
+  .logo {
+    font-size: clamp(1rem, 3vw, 1.2rem); /* Slightly smaller logo for mobile */
   }
 
   .hero {
     padding-top: 8rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .nav-list {
-    gap: 0.9rem;
   }
 
   .hero-image {
@@ -431,3 +435,4 @@ body {
     gap: 0.6rem;
   }
 }
+
