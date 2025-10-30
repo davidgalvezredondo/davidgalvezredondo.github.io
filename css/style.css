@@ -3,7 +3,7 @@
   --color-primary: #4c8dff;
   --color-text: #f0f0f0;
   --color-text-secondary: #b0b0b0;
-  --color-nav: #ffffff;
+  --color-nav: #b0b0b0;
   --color-accent: #5be3c7;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   --font-family: 'Poppins', sans-serif;
@@ -59,7 +59,7 @@ body {
 }
 
 .nav-list a {
-  color: var(#ffffff);
+  color: var(--color-nav);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s, transform 0.2s;
